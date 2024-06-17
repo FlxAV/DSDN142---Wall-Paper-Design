@@ -1,0 +1,56 @@
+//your parameter variables go here!
+//grid setup
+let rect_width  = 20;
+let rect_height = 20;
+let cellWidth = 100;
+let cellHeight = 100;
+let rowOffset = 0;
+
+
+//Flower of Life variables
+let circleXpos = 0; // main ellipse Xcord
+let circleXposTemp = 0; //version2
+let circleXposOnY = 0; //version1
+let circleYpos = 0; // main ellipse Ycord
+let circleYposTemp = 0; //version2
+let circleOffset = 0;
+let circleDIAM = 40;
+let circleRADIUS = circleDIAM/2;
+let circleXamountV1 = (100/circleRADIUS)+2; // version1
+let circleXamount = 6;
+let circleYamount = 4;
+
+
+//**************MAKE SURE ONLY ONE OF THE 'CHECK' VARIABLES IS SET TO TRUE*************************
+
+let flowerCheck = false; // set to true for a flower of life variable that unfortunately not work with the grid wallpaper
+
+let mamsPatternCheck = true;// true for a funky pattern.
+
+// Variables for when devellopping, set true for no randomness and select which tile you want
+let phareCheck = false; // lighthouse (Phare = lighthouse)
+let merCheck = false; // ocean (Mer = ocean)
+let ileCheck = false; // island (ile = island)
+let birdsCheck = false;// birds
+
+//Used for creating the border.
+let patternBoatCheck = false; //also creates a pattern if set to true
+let patternWheelCheck = false;//also creates a pattern if set to true
+let patternMarinCheck = false;//used on pattern
+let patternMarinBIGCheck = false;//A pattern with the border but massive.
+
+let pharePatternCheck = false;// makes the pattern randomized
+
+let counter =0;
+
+//*********VARIABLES YOU CAN CHANGE AROUND EASILY **********************
+
+let bigAndSmallCheck = true; //have both small and big island (true) or just big islands(false);
+let pharePatternWheelOrBoat = "B";//Choose if the pattern is boats "B" or boatWheels "W"
+
+//janky percentages... (try and make the first three variable < 100)
+let percentageOfPhare =0;
+let percentageOfIslands = 0;
+let percentageOfBirds = 70;
+let percentageOfWater = 100-(percentageOfPhare+percentageOfIslands+percentageOfBirds);
+
