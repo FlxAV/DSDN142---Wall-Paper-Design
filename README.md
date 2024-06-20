@@ -44,7 +44,7 @@ let percentageOfPhare = 5;
 let percentageOfIslands = 20;
 let percentageOfBirds = 40;
 let percentageOfWater = 100 - (percentageOfPhare + percentageOfIslands + percentageOfBirds);
-javascript```
+```
 
 ### Installation and Setup
 
