@@ -46,6 +46,8 @@ let percentageOfBirds = 40;
 let percentageOfWater = 100 - (percentageOfPhare + percentageOfIslands + percentageOfBirds);
 ```
 
+In the folder called "9 Iterations Images" you can see 9 different designs possible with the code, and in the  "9 Iterations Code" folder you can see the changes to the variables needed to be done if you would like to recreate them yourself.
+
 ### Installation and Setup
 
 1. **Clone the Repository:**
