@@ -25,7 +25,7 @@ In the GRID_WALLPAPER mode, you can set one of the pattern checks to `true` and 
 - **patternMarinBIGCheck**: Similar to patternMarinCheck but larger, making it easier to view the designs.
 
 #### Important Pattern
-- **pharePatternCheck**: This should be `true` by default. It creates a grid using some probability to generate a horizon view of the ocean. Each tile has a chance of containing nothing, a lighthouse, an island, or birds.
+- **pharePatternCheck**: This should be `true` by default, can be changed to view the other designs. It creates a grid using some probability to generate a horizon view of the ocean. Each tile has a chance of containing nothing, a lighthouse, an island, or birds.
 
 #### Additional Customization Options
 - **bigAndSmallCheck**: Allows for the chance of having two sizes for the islands in the pattern for more variety.
@@ -37,6 +37,13 @@ There are four percentage variables for each tile. You should only change the to
 - **percentageOfIslands**: Probability of an island tile.
 - **percentageOfBirds**: Probability of a birds tile.
 - **percentageOfWater**: Calculated automatically to fill the remaining percentage.
+
+#### Example:
+```javascript
+let percentageOfPhare = 5;
+let percentageOfIslands = 20;
+let percentageOfBirds = 40;
+let percentageOfWater = 100 - (percentageOfPhare + percentageOfIslands + percentageOfBirds);
 
 ### Installation and Setup
 
